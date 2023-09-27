@@ -206,6 +206,7 @@ SELECT E.EmpNo, E.EmpName, EM.SkillNo, S.SkillName, E.DeptNo, D.DeptName FROM Em
 	JOIN Emp_Skill EM ON E.EmpNo = EM.EmpNo 
 	JOIN Skill S ON EM.SkillNo = S.SkillNo
 	JOIN Department D ON E.DeptNo = D.DeptNo
-	ORDER BY EmpNo ASC
-	
 GO
+
+SELECT * FROM VW_Qh
+
